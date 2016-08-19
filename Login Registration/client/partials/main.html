@@ -1,0 +1,19 @@
+<p ng-repeat = "user in users">{{user}}<p>
+	
+
+<form ng-submit='validate()'>
+	Email: <input type="text" ng-model='newUser.email'>
+	<p>{{errors.email.message}}</p>
+	<p>{{dup_error}}</p>
+	First Name: <input type="text" ng-model='newUser.first'>
+	<p>{{errors.first.message}}</p>
+	Last Name: <input type="text" ng-model='newUser.last'>
+	<p>{{errors.last.message}}</p>
+	Password: <input type="password" ng-model='newUser.password'>
+	<p>{{errors.password.message}}</p>
+	Confrim: <input type="password" ng-model='newUser.confirm'>
+	<p>{{pass_confirm}}</p>
+	Birthday: <input type="date" ng-model="newUser.birth">
+	<p>{{errors.birth.message}}</p>
+	<input type="submit" name="Submit">
+</form>

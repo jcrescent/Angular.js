@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app ="app">
+<head>
+	<title>Welcome</title>    
+</head>
+	<script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="angular-cookies/angular-cookies.js"></script>
+    <script src="./assets/app.js"></script>
+    <script src="./assets/factories/UsersFactory.js"></script>
+    <script src="./assets/controllers/mainController.js"></script>
+    <script src="./assets/controllers/loginController.js"></script>
+    <script src="./assets/controllers/welcomeController.js"></script>
+<body>
+<a href="#/main">Register!</a> | Already have an account? <a href="#/login">Login</a>
+<div ng-view="">
+</div>
+</body>
+</html>
